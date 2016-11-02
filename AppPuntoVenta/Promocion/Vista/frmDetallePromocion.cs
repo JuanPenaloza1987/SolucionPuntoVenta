@@ -336,8 +336,7 @@ namespace AppPuntoVenta.Promocion.Vista
             busquedaProducto.MdiParent = this.MdiParent.MdiParent;
             busquedaProducto.ShowDialog();
             productosValidos.ToList();
-            DataGridView artPromo = new DataGridView();
-            artPromo = dataGrid;
+
             if (busquedaProducto.DialogResult == DialogResult.OK)
             {
                 if (!esPromocionRegalo)
@@ -366,19 +365,43 @@ namespace AppPuntoVenta.Promocion.Vista
                 }
                 else
                 {
-                    dataGrid.DataSource = null;
-
-                    foreach (var item in (IEnumerable<Producto>)busquedaProducto.productos)
+                    if (dataGrid.Rows.Count > 0)
                     {
-                        var consutla = from p in productosRegalo where p.Codigo == item.Codigo select p;
-                        if (consutla.Count() == 0)
+
+                        dataGrid.DataSource = null;
+
+                        foreach (var item in (IEnumerable<Producto>)busquedaProducto.productos)
                         {
-                            productosRegalo.Add(item);
+                            var consutla = from p in productosRegalo where p.Codigo == item.Codigo select p;
+                            if (consutla.Count() == 0)
+                            {
+                                productosRegalo.Add(item);
+                            }
                         }
+                        dataGrid.DataSource = productosRegalo.ToList();
+                        //productosRegalo = productosRegalo.Concat((IEnumerable<Producto>)busquedaProducto.productos).Distinct().ToList();
+                        dataGrid.DataSource = productosRegalo;
+
+                        //dataGrid.DataSource = null;
+
+                        //foreach (var item in (IEnumerable<Producto>)busquedaProducto.productos)
+                        //{
+                        //    var consutla = from p in productos where p.Codigo == item.Codigo select p;
+                        //    if (consutla.Count() == 0)
+                        //    {
+                        //        productos.Add(item);
+                        //    }
+                        //}
+                        //dataGrid.DataSource = productos.ToList();
+
                     }
-                    dataGrid.DataSource = productosRegalo.ToList();
-                    //productosRegalo = productosRegalo.Concat((IEnumerable<Producto>)busquedaProducto.productos).Distinct().ToList();
-                    dataGrid.DataSource = productosRegalo;
+                    else
+                    {
+                        productosRegalo = productosRegalo.Concat((IEnumerable<Producto>)busquedaProducto.productos).Distinct().ToList();
+                        Console.WriteLine(productosRegalo);
+                        dataGrid.DataSource = productosRegalo;
+                    }
+
                 }
             }
         }
@@ -453,15 +476,6 @@ namespace AppPuntoVenta.Promocion.Vista
 
         }
 
-        private void dgvRegalo_Click(object sender, EventArgs e)
-        {
-            return;
-        }
-
-        private void dgvNecesarios_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

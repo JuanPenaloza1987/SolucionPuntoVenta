@@ -437,7 +437,7 @@ namespace AppPuntoVenta.Promocion.Negocio
             
             if (EliminarDetallePromocion())
             {
-                Objeto.sentenciaSQL = "DELETE procpromo WHERE prom_codigo = '" + prom_codigo + "'";
+                Objeto.sentenciaSQL = "DELETE FROM procpromo WHERE prom_codigo = '" + prom_codigo + "' ;";
                 Objeto.ejecutaTransaccion();
                 if (!Objeto.hayError)
                 {
@@ -459,7 +459,7 @@ namespace AppPuntoVenta.Promocion.Negocio
         {
             BD Objeto = new BD();
             
-            Objeto.sentenciaSQL = "DELETE FROM promarti WHERE prar_codprom = " + prom_codigo ;
+            Objeto.sentenciaSQL = "DELETE FROM promarti WHERE prar_codprom = '" + prom_codigo +"' ;" ;
             Objeto.ejecutaTransaccion();
             if (!Objeto.hayError)
             {

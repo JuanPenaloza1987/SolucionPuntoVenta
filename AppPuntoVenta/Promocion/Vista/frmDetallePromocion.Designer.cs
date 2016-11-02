@@ -478,8 +478,6 @@
             // 
             // dgvRegalo
             // 
-            this.dgvRegalo.AllowUserToAddRows = false;
-            this.dgvRegalo.AllowUserToDeleteRows = false;
             this.dgvRegalo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRegalo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRegalo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -488,11 +486,9 @@
             this.dgvRegalo.ContextMenuStrip = this.ctxCxC;
             this.dgvRegalo.Location = new System.Drawing.Point(274, 44);
             this.dgvRegalo.Name = "dgvRegalo";
-            this.dgvRegalo.ReadOnly = true;
             this.dgvRegalo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvRegalo.Size = new System.Drawing.Size(251, 221);
             this.dgvRegalo.TabIndex = 91;
-            this.dgvRegalo.Click += new System.EventHandler(this.dgvRegalo_Click);
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -540,7 +536,6 @@
             this.dgvNecesarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNecesarios.Size = new System.Drawing.Size(251, 221);
             this.dgvNecesarios.TabIndex = 84;
-            this.dgvNecesarios.Click += new System.EventHandler(this.dgvNecesarios_Click);
             // 
             // dataGridViewTextBoxColumn8
             // 
