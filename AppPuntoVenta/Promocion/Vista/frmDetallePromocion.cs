@@ -444,14 +444,18 @@ namespace AppPuntoVenta.Promocion.Vista
                 gridSeleccionado.DataSource = esPromocionRegalo ? productosRegalo : productos;
                 gridSeleccionado.ClearSelection();
             }else{
-                dgvArticulos.Rows.RemoveAt(dgvArticulos.SelectedRows[0].Index);           
-	        }
+                // dgvArticulos.Rows.RemoveAt(dgvArticulos.SelectedRows[0].Index);           
+
+                gridSeleccionado.DataSource = null;
+                gridSeleccionado.DataSource = esPromocionRegalo ? productosRegalo : productos;
+                gridSeleccionado.ClearSelection();
+            }
 
         }
 
         private void dgvRegalo_Click(object sender, EventArgs e)
         {
-
+            return;
         }
 
         private void dgvNecesarios_Click(object sender, EventArgs e)

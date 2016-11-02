@@ -89,13 +89,17 @@
   <ItemGroup>
     <Compile Include="BD\BD.cs" />
     <Compile Include="Configuraciones\Negocio\clsConfiguracion.cs" />
-    <Compile Include="Configuraciones\Vista\frmConfiguracion.cs" />
+    <Compile Include="Configuraciones\Vista\frmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Configuraciones\Vista\frmConfiguracion.Designer.cs">
       <DependentUpon>frmConfiguracion.cs</DependentUpon>
     </Compile>
     <Compile Include="Entidades\ArticuloVenta.cs" />
     <Compile Include="Catalogos\Negocio\clsArticulos.cs" />
-    <Compile Include="frmAcercaDe.cs" />
+    <Compile Include="frmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmAcercaDe.Designer.cs">
       <DependentUpon>frmAcercaDe.cs</DependentUpon>
     </Compile>
@@ -111,7 +115,9 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="mdlBusquedaProducto.cs" />
+    <Compile Include="mdlBusquedaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="mdlBusquedaProducto.Designer.cs">
       <DependentUpon>mdlBusquedaProducto.cs</DependentUpon>
     </Compile>
@@ -122,13 +128,17 @@
     <Compile Include="Paquete\Vista\frmDetallePaquete.Designer.cs">
       <DependentUpon>frmDetallePaquete.cs</DependentUpon>
     </Compile>
-    <Compile Include="Paquete\Vista\frmPaquete.cs" />
+    <Compile Include="Paquete\Vista\frmPaquete.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Paquete\Vista\frmPaquete.Designer.cs">
       <DependentUpon>frmPaquete.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Seguridad\Negocio\clsLogin.cs" />
-    <Compile Include="Seguridad\Vista\frmLogin.cs" />
+    <Compile Include="Seguridad\Vista\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Seguridad\Vista\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
@@ -178,11 +188,15 @@
     <Compile Include="Venta\Negocio\clsVenta.cs" />
     <Compile Include="Entidades\ConfMetodo.cs" />
     <Compile Include="Entidades\DetalleMetodoPago.cs" />
-    <Compile Include="Venta\Vista\frmAperturaCaja.cs" />
+    <Compile Include="Venta\Vista\frmAperturaCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Venta\Vista\frmAperturaCaja.designer.cs">
       <DependentUpon>frmAperturaCaja.cs</DependentUpon>
     </Compile>
-    <Compile Include="Venta\Vista\frmConfMetodoPago.cs" />
+    <Compile Include="Venta\Vista\frmConfMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Venta\Vista\frmConfMetodoPago.designer.cs">
       <DependentUpon>frmConfMetodoPago.cs</DependentUpon>
     </Compile>
@@ -192,23 +206,33 @@
     <Compile Include="Venta\Vista\frmCorteCaja.designer.cs">
       <DependentUpon>frmCorteCaja.cs</DependentUpon>
     </Compile>
-    <Compile Include="Venta\Vista\frmVenta.cs" />
+    <Compile Include="Venta\Vista\frmVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Venta\Vista\frmVenta.Designer.cs">
       <DependentUpon>frmVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Venta\Vista\Modal\mdlAyuda.cs" />
+    <Compile Include="Venta\Vista\Modal\mdlAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Venta\Vista\Modal\mdlAyuda.Designer.cs">
       <DependentUpon>mdlAyuda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Venta\Vista\Modal\mdlDetallMetodoPago.cs" />
+    <Compile Include="Venta\Vista\Modal\mdlDetallMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Venta\Vista\Modal\mdlDetallMetodoPago.Designer.cs">
       <DependentUpon>mdlDetallMetodoPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Venta\Vista\Modal\mdlDolares.cs" />
+    <Compile Include="Venta\Vista\Modal\mdlDolares.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Venta\Vista\Modal\mdlDolares.Designer.cs">
       <DependentUpon>mdlDolares.cs</DependentUpon>
     </Compile>
-    <Compile Include="Venta\Vista\Modal\mdlFormaPago.cs" />
+    <Compile Include="Venta\Vista\Modal\mdlFormaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Venta\Vista\Modal\mdlFormaPago.Designer.cs">
       <DependentUpon>mdlFormaPago.cs</DependentUpon>
     </Compile>
