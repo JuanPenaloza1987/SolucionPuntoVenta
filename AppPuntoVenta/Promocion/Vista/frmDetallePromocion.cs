@@ -449,6 +449,15 @@ namespace AppPuntoVenta.Promocion.Vista
 
         }
 
+        private void dgvRegalo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvNecesarios_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

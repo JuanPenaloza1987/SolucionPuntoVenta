@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnNuevo = new System.Windows.Forms.ToolStripButton();
-            this.btnGuardar = new System.Windows.Forms.ToolStripButton();
-            this.btnCancelar = new System.Windows.Forms.ToolStripButton();
             this.txtCodigoPromocion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbPromociones = new System.Windows.Forms.TabControl();
@@ -43,39 +40,42 @@
             this.ctxCxC = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnBuscarProducto = new System.Windows.Forms.Button();
             this.tbDescPor = new System.Windows.Forms.TabPage();
             this.dgvDescuentoPor = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnBuscarProductoPor = new System.Windows.Forms.Button();
             this.txtDescPor = new System.Windows.Forms.TextBox();
             this.tbDescImp = new System.Windows.Forms.TabPage();
             this.dgvDescuentoImp = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnBuscarProductoImp = new System.Windows.Forms.Button();
             this.txtDescImp = new System.Windows.Forms.TextBox();
             this.tbPrecioFijo = new System.Windows.Forms.TabPage();
             this.dgvPrecioFijo = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnBuscarProductoFijo = new System.Windows.Forms.Button();
             this.txtPrecioFijo = new System.Windows.Forms.TextBox();
             this.tbRegalo = new System.Windows.Forms.TabPage();
             this.dgvRegalo = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnProductoReg = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnProductoNec = new System.Windows.Forms.Button();
             this.dgvNecesarios = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBuscarProducto = new System.Windows.Forms.Button();
+            this.btnBuscarProductoPor = new System.Windows.Forms.Button();
+            this.btnBuscarProductoImp = new System.Windows.Forms.Button();
+            this.btnBuscarProductoFijo = new System.Windows.Forms.Button();
+            this.btnProductoReg = new System.Windows.Forms.Button();
+            this.btnProductoNec = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.ToolStripButton();
+            this.btnGuardar = new System.Windows.Forms.ToolStripButton();
+            this.btnCancelar = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.tbPromociones.SuspendLayout();
             this.tbcxc.SuspendLayout();
@@ -104,37 +104,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(557, 25);
             this.toolStrip1.TabIndex = 67;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnNuevo.Image = global::AppPuntoVenta.Properties.Resources.nuevo_24;
-            this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(23, 22);
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnGuardar.Image = global::AppPuntoVenta.Properties.Resources.guardar_24;
-            this.btnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(23, 22);
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnCancelar.Image = global::AppPuntoVenta.Properties.Resources.cancelar_32;
-            this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(23, 22);
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.Visible = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtCodigoPromocion
             // 
@@ -234,25 +203,13 @@
             this.label3.TabIndex = 82;
             this.label3.Text = "Artículos";
             // 
-            // btnBuscarProducto
-            // 
-            this.btnBuscarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarProducto.Image = global::AppPuntoVenta.Properties.Resources.buscar_32;
-            this.btnBuscarProducto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBuscarProducto.Location = new System.Drawing.Point(62, 13);
-            this.btnBuscarProducto.Name = "btnBuscarProducto";
-            this.btnBuscarProducto.Size = new System.Drawing.Size(22, 20);
-            this.btnBuscarProducto.TabIndex = 81;
-            this.btnBuscarProducto.UseVisualStyleBackColor = true;
-            this.btnBuscarProducto.Click += new System.EventHandler(this.btnBuscarProducto_Click);
-            // 
             // tbDescPor
             // 
             this.tbDescPor.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbDescPor.Controls.Add(this.dgvDescuentoPor);
             this.tbDescPor.Controls.Add(this.label5);
-            this.tbDescPor.Controls.Add(this.btnBuscarProductoPor);
             this.tbDescPor.Controls.Add(this.txtDescPor);
+            this.tbDescPor.Controls.Add(this.btnBuscarProductoPor);
             this.tbDescPor.Location = new System.Drawing.Point(4, 22);
             this.tbDescPor.Name = "tbDescPor";
             this.tbDescPor.Padding = new System.Windows.Forms.Padding(3);
@@ -299,18 +256,6 @@
             this.label5.TabIndex = 82;
             this.label5.Text = "Artículos";
             // 
-            // btnBuscarProductoPor
-            // 
-            this.btnBuscarProductoPor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarProductoPor.Image = global::AppPuntoVenta.Properties.Resources.buscar_32;
-            this.btnBuscarProductoPor.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBuscarProductoPor.Location = new System.Drawing.Point(171, 11);
-            this.btnBuscarProductoPor.Name = "btnBuscarProductoPor";
-            this.btnBuscarProductoPor.Size = new System.Drawing.Size(22, 20);
-            this.btnBuscarProductoPor.TabIndex = 81;
-            this.btnBuscarProductoPor.UseVisualStyleBackColor = true;
-            this.btnBuscarProductoPor.Click += new System.EventHandler(this.btnBuscarProductoPor_Click);
-            // 
             // txtDescPor
             // 
             this.txtDescPor.Location = new System.Drawing.Point(12, 12);
@@ -323,8 +268,8 @@
             this.tbDescImp.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbDescImp.Controls.Add(this.dgvDescuentoImp);
             this.tbDescImp.Controls.Add(this.label6);
-            this.tbDescImp.Controls.Add(this.btnBuscarProductoImp);
             this.tbDescImp.Controls.Add(this.txtDescImp);
+            this.tbDescImp.Controls.Add(this.btnBuscarProductoImp);
             this.tbDescImp.Location = new System.Drawing.Point(4, 22);
             this.tbDescImp.Name = "tbDescImp";
             this.tbDescImp.Size = new System.Drawing.Size(525, 268);
@@ -370,18 +315,6 @@
             this.label6.TabIndex = 82;
             this.label6.Text = "Artículos";
             // 
-            // btnBuscarProductoImp
-            // 
-            this.btnBuscarProductoImp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarProductoImp.Image = global::AppPuntoVenta.Properties.Resources.buscar_32;
-            this.btnBuscarProductoImp.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBuscarProductoImp.Location = new System.Drawing.Point(171, 11);
-            this.btnBuscarProductoImp.Name = "btnBuscarProductoImp";
-            this.btnBuscarProductoImp.Size = new System.Drawing.Size(22, 20);
-            this.btnBuscarProductoImp.TabIndex = 81;
-            this.btnBuscarProductoImp.UseVisualStyleBackColor = true;
-            this.btnBuscarProductoImp.Click += new System.EventHandler(this.btnBuscarProductoImp_Click);
-            // 
             // txtDescImp
             // 
             this.txtDescImp.Location = new System.Drawing.Point(12, 12);
@@ -394,8 +327,8 @@
             this.tbPrecioFijo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbPrecioFijo.Controls.Add(this.dgvPrecioFijo);
             this.tbPrecioFijo.Controls.Add(this.label7);
-            this.tbPrecioFijo.Controls.Add(this.btnBuscarProductoFijo);
             this.tbPrecioFijo.Controls.Add(this.txtPrecioFijo);
+            this.tbPrecioFijo.Controls.Add(this.btnBuscarProductoFijo);
             this.tbPrecioFijo.Location = new System.Drawing.Point(4, 22);
             this.tbPrecioFijo.Name = "tbPrecioFijo";
             this.tbPrecioFijo.Size = new System.Drawing.Size(525, 268);
@@ -441,18 +374,6 @@
             this.label7.TabIndex = 82;
             this.label7.Text = "Artículos";
             // 
-            // btnBuscarProductoFijo
-            // 
-            this.btnBuscarProductoFijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarProductoFijo.Image = global::AppPuntoVenta.Properties.Resources.buscar_32;
-            this.btnBuscarProductoFijo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBuscarProductoFijo.Location = new System.Drawing.Point(171, 11);
-            this.btnBuscarProductoFijo.Name = "btnBuscarProductoFijo";
-            this.btnBuscarProductoFijo.Size = new System.Drawing.Size(22, 20);
-            this.btnBuscarProductoFijo.TabIndex = 81;
-            this.btnBuscarProductoFijo.UseVisualStyleBackColor = true;
-            this.btnBuscarProductoFijo.Click += new System.EventHandler(this.btnBuscarProductoFijo_Click);
-            // 
             // txtPrecioFijo
             // 
             this.txtPrecioFijo.Location = new System.Drawing.Point(12, 12);
@@ -465,10 +386,10 @@
             this.tbRegalo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbRegalo.Controls.Add(this.dgvRegalo);
             this.tbRegalo.Controls.Add(this.label4);
-            this.tbRegalo.Controls.Add(this.btnProductoReg);
             this.tbRegalo.Controls.Add(this.label2);
-            this.tbRegalo.Controls.Add(this.btnProductoNec);
             this.tbRegalo.Controls.Add(this.dgvNecesarios);
+            this.tbRegalo.Controls.Add(this.btnProductoReg);
+            this.tbRegalo.Controls.Add(this.btnProductoNec);
             this.tbRegalo.Location = new System.Drawing.Point(4, 22);
             this.tbRegalo.Name = "tbRegalo";
             this.tbRegalo.Padding = new System.Windows.Forms.Padding(3);
@@ -489,6 +410,7 @@
             this.dgvRegalo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvRegalo.Size = new System.Drawing.Size(251, 221);
             this.dgvRegalo.TabIndex = 91;
+            this.dgvRegalo.Click += new System.EventHandler(this.dgvRegalo_Click);
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -514,18 +436,6 @@
             this.label4.TabIndex = 89;
             this.label4.Text = "Artículos de regalo";
             // 
-            // btnProductoReg
-            // 
-            this.btnProductoReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductoReg.Image = global::AppPuntoVenta.Properties.Resources.buscar_32;
-            this.btnProductoReg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnProductoReg.Location = new System.Drawing.Point(379, 14);
-            this.btnProductoReg.Name = "btnProductoReg";
-            this.btnProductoReg.Size = new System.Drawing.Size(22, 20);
-            this.btnProductoReg.TabIndex = 88;
-            this.btnProductoReg.UseVisualStyleBackColor = true;
-            this.btnProductoReg.Click += new System.EventHandler(this.btnProductoReg_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -534,18 +444,6 @@
             this.label2.Size = new System.Drawing.Size(103, 13);
             this.label2.TabIndex = 86;
             this.label2.Text = "Artículos necesarios";
-            // 
-            // btnProductoNec
-            // 
-            this.btnProductoNec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductoNec.Image = global::AppPuntoVenta.Properties.Resources.buscar_32;
-            this.btnProductoNec.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnProductoNec.Location = new System.Drawing.Point(116, 15);
-            this.btnProductoNec.Name = "btnProductoNec";
-            this.btnProductoNec.Size = new System.Drawing.Size(22, 20);
-            this.btnProductoNec.TabIndex = 85;
-            this.btnProductoNec.UseVisualStyleBackColor = true;
-            this.btnProductoNec.Click += new System.EventHandler(this.btnProductoNec_Click);
             // 
             // dgvNecesarios
             // 
@@ -560,6 +458,7 @@
             this.dgvNecesarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNecesarios.Size = new System.Drawing.Size(251, 221);
             this.dgvNecesarios.TabIndex = 84;
+            this.dgvNecesarios.Click += new System.EventHandler(this.dgvNecesarios_Click);
             // 
             // dataGridViewTextBoxColumn8
             // 
@@ -575,6 +474,109 @@
             this.dataGridViewTextBoxColumn7.HeaderText = "Artículo";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // btnBuscarProducto
+            // 
+            this.btnBuscarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarProducto.Image = global::AppPuntoVenta.Properties.Resources.buscar_32;
+            this.btnBuscarProducto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnBuscarProducto.Location = new System.Drawing.Point(62, 13);
+            this.btnBuscarProducto.Name = "btnBuscarProducto";
+            this.btnBuscarProducto.Size = new System.Drawing.Size(22, 20);
+            this.btnBuscarProducto.TabIndex = 81;
+            this.btnBuscarProducto.UseVisualStyleBackColor = true;
+            this.btnBuscarProducto.Click += new System.EventHandler(this.btnBuscarProducto_Click);
+            // 
+            // btnBuscarProductoPor
+            // 
+            this.btnBuscarProductoPor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarProductoPor.Image = global::AppPuntoVenta.Properties.Resources.buscar_32;
+            this.btnBuscarProductoPor.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnBuscarProductoPor.Location = new System.Drawing.Point(171, 11);
+            this.btnBuscarProductoPor.Name = "btnBuscarProductoPor";
+            this.btnBuscarProductoPor.Size = new System.Drawing.Size(22, 20);
+            this.btnBuscarProductoPor.TabIndex = 81;
+            this.btnBuscarProductoPor.UseVisualStyleBackColor = true;
+            this.btnBuscarProductoPor.Click += new System.EventHandler(this.btnBuscarProductoPor_Click);
+            // 
+            // btnBuscarProductoImp
+            // 
+            this.btnBuscarProductoImp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarProductoImp.Image = global::AppPuntoVenta.Properties.Resources.buscar_32;
+            this.btnBuscarProductoImp.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnBuscarProductoImp.Location = new System.Drawing.Point(171, 11);
+            this.btnBuscarProductoImp.Name = "btnBuscarProductoImp";
+            this.btnBuscarProductoImp.Size = new System.Drawing.Size(22, 20);
+            this.btnBuscarProductoImp.TabIndex = 81;
+            this.btnBuscarProductoImp.UseVisualStyleBackColor = true;
+            this.btnBuscarProductoImp.Click += new System.EventHandler(this.btnBuscarProductoImp_Click);
+            // 
+            // btnBuscarProductoFijo
+            // 
+            this.btnBuscarProductoFijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarProductoFijo.Image = global::AppPuntoVenta.Properties.Resources.buscar_32;
+            this.btnBuscarProductoFijo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnBuscarProductoFijo.Location = new System.Drawing.Point(171, 11);
+            this.btnBuscarProductoFijo.Name = "btnBuscarProductoFijo";
+            this.btnBuscarProductoFijo.Size = new System.Drawing.Size(22, 20);
+            this.btnBuscarProductoFijo.TabIndex = 81;
+            this.btnBuscarProductoFijo.UseVisualStyleBackColor = true;
+            this.btnBuscarProductoFijo.Click += new System.EventHandler(this.btnBuscarProductoFijo_Click);
+            // 
+            // btnProductoReg
+            // 
+            this.btnProductoReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductoReg.Image = global::AppPuntoVenta.Properties.Resources.buscar_32;
+            this.btnProductoReg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnProductoReg.Location = new System.Drawing.Point(379, 14);
+            this.btnProductoReg.Name = "btnProductoReg";
+            this.btnProductoReg.Size = new System.Drawing.Size(22, 20);
+            this.btnProductoReg.TabIndex = 88;
+            this.btnProductoReg.UseVisualStyleBackColor = true;
+            this.btnProductoReg.Click += new System.EventHandler(this.btnProductoReg_Click);
+            // 
+            // btnProductoNec
+            // 
+            this.btnProductoNec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductoNec.Image = global::AppPuntoVenta.Properties.Resources.buscar_32;
+            this.btnProductoNec.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnProductoNec.Location = new System.Drawing.Point(116, 15);
+            this.btnProductoNec.Name = "btnProductoNec";
+            this.btnProductoNec.Size = new System.Drawing.Size(22, 20);
+            this.btnProductoNec.TabIndex = 85;
+            this.btnProductoNec.UseVisualStyleBackColor = true;
+            this.btnProductoNec.Click += new System.EventHandler(this.btnProductoNec_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnNuevo.Image = global::AppPuntoVenta.Properties.Resources.nuevo_24;
+            this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(23, 22);
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnGuardar.Image = global::AppPuntoVenta.Properties.Resources.guardar_24;
+            this.btnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(23, 22);
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnCancelar.Image = global::AppPuntoVenta.Properties.Resources.cancelar_32;
+            this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(23, 22);
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Visible = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmDetallePromocion
             // 
