@@ -129,7 +129,7 @@ namespace AppPuntoVenta.Promocion.Vista
             }
             else
             {
-                MostrarMensajeInformacion("Algo salio mal: " + cPromocion.mensaje);
+                MostrarMensajeInformacion("Algo salio mal:  ya existe una promocion con el mismo codigo " + cPromocion.mensaje);
             }
 
         }
