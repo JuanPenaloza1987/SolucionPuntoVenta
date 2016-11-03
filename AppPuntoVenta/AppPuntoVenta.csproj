@@ -276,6 +276,8 @@
     <EmbeddedResource Include="Seguridad\Vista\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Reporte\repCorte.rdlc" />
+    <EmbeddedResource Include="Venta\Reporte\repCorteCaja.rdlc" />
     <EmbeddedResource Include="Venta\Vista\frmAperturaCaja.resx">
       <DependentUpon>frmAperturaCaja.cs</DependentUpon>
     </EmbeddedResource>

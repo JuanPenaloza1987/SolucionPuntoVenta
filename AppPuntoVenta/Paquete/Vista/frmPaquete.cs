@@ -105,7 +105,7 @@ namespace AppPuntoVenta
 
             decimal precio = 0;
             if(!decimal.TryParse(txtPrecio.Text, out precio)){
-                MessageBox.Show("El campo de descripción es obligatorio");
+                MessageBox.Show("El campo precio es obligatorio");
                 return;
             }
 
